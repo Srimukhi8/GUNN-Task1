@@ -18,11 +18,15 @@ Use of various Algorithms like :
 1 . Clone the repository : 
     https://github.com/Srimukhi8/GUNN-Task1
 
-2 . mkdir build 
+2 . ```bash
+    mkdir build 
     cd build 
     cmake .. 
     make 
+    ```
     
 3 . Run the example : 
+    ```bash
     ./graph_app graph_data.txt 
-    Give the input (desired number of output features). 
+    Give the input (desired number of output features).
+    ``` 
