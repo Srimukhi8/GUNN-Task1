@@ -15,14 +15,14 @@ Use of various Algorithms like :
 ---
 
 # Installation
-1 . Clone the repository :
+1 . Clone the repository : 
     https://github.com/Srimukhi8/GUNN-Task1
 
-2 . mkdir build
-    cd build
-    cmake ..
-    make
+2 . mkdir build 
+    cd build 
+    cmake .. 
+    make 
     
-3 . Run the example :
-    ./graph_app graph_data.txt
-    Give the input (desired number of output features).
+3 . Run the example : 
+    ./graph_app graph_data.txt 
+    Give the input (desired number of output features). 
