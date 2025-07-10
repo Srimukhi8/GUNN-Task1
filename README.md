@@ -16,17 +16,15 @@ Use of various Algorithms like :
 
 # Installation
 1 . Clone the repository : 
-    https://github.com/Srimukhi8/GUNN-Task1
+https://github.com/Srimukhi8/GUNN-Task1
 
-2 . ```bash
-    mkdir build 
-    cd build 
-    cmake .. 
-    make 
-    ```
+2 . 
+mkdir build 
+cd build 
+cmake .. 
+make 
     
 3 . Run the example : 
-    ```bash
-    ./graph_app graph_data.txt 
-    Give the input (desired number of output features).
-    ``` 
+./graph_app graph_data.txt 
+Give the input (desired number of output features).
+ 
