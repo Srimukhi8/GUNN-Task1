@@ -1,3 +1,0 @@
-/mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/build/CMakeFiles/graph_app.dir
-/mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/build/CMakeFiles/edit_cache.dir
-/mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/build/CMakeFiles/rebuild_cache.dir
