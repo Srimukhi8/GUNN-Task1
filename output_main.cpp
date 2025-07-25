@@ -79,26 +79,24 @@ int main(int argc, char** argv) {
 
     float graphScore = OutputConverter::toGraphScore(
         nodeScores, 
-        OutputConverter::DefaultAgg::maxGraph        // use max aggregator
+        OutputConverter::DefaultAgg::meanGraph        // use max aggregator
     );
 
     bool graphTruth = OutputConverter::toGraphBinary(
         nodeScores,
         0.5f,                  // threshold        
-        OutputConverter::DefaultAgg::maxGraph  // same aggregator
+        OutputConverter::DefaultAgg::meanGraph  // same aggregator
     );
 
     // 7) Print results
     cout << "=== Graph‐Level ===\n";
     cout << "Score = " << graphScore
-              << " | truth = " << boolalpha << graphTruth
               << "\n\n";
 
     cout << "=== Edge‐Level ===\n";
     for (size_t i = 0; i < edgeScores.size(); ++i) {
         cout << "Edge " << i
                   << " | score = " << edgeScores[i]
-                  << " | truth = " << boolalpha << edgeTruth[i]
                   << "\n";
     }
 
