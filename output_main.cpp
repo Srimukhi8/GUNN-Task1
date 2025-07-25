@@ -1,42 +1,44 @@
 // main.cpp
 
 #include "Graph.h"              // your Graph class
-#include "GraphReader.h"         // gives read_graph_from_file(...)
-#include "GCNL.h"               // your existing GCNLayer
-#include "output.h"    // for edge/graph conversions
+#include "GraphReader.h"        // read_graph_from_file(...)
+#include "GCNTest.h"               // your existing GCNLayer
+#include "output.h"             // OutputConverter API
 #include <iostream>
 #include <vector>
 #include <numeric>
+#include <functional>           // for function
 
 int main(int argc, char** argv) {
-    // 1) Grab the input filename from the command line
+    // 1) Grab the input filename
     if (argc < 2) {
         cerr << "Usage: " << argv[0] << " <graph_input_file>\n";
         return 1;
     }
     string filename = argv[1];
 
-    // 2) Read the Graph (num_nodes, num_features, features, edges)
-    //    from the user-provided file
+    // 2) Read the graph
     Graph g = read_graph_from_file(filename);
 
-    // 3) Run one GCN layer to update each node's feature vector
-    //    (input_dim = g.num_node_features, output_dim prompted from the user)
-    int out;
-    cin >> out;
-    GCNLayer gcn(g.num_node_features, out);
+    // 3) Run one GCN layer
+    cout << "Enter output feature dimension: ";
+    int out_dim;
+    cin >> out_dim;
+
+    GCNTestLayer gcn(g.num_node_features, out_dim);
     auto features = gcn.forward(g.node_features, g.adjacency_list);
-    cout << "=== Node‐Level ===\n";
-    for (const auto& node : features) {
-        for (float val : node) {
+
+    cout << "=== Node Features (post-GCN) ===\n";
+    for (size_t i = 0; i < features.size(); ++i) {
+        cout << "Node " << i << ": ";
+        for (float val : features[i]) {
             cout << val << " ";
         }
         cout << "\n";
     }
     cout << "\n";
-    //    features: vector of size [num_nodes][out]
 
-    // 4) Turn each 'out'-entry feature vector → one node score (sum)
+    // 4) Compute node‐level scores (sum of features)
     vector<float> nodeScores;
     nodeScores.reserve(features.size());
     for (auto &feat : features) {
@@ -44,22 +46,59 @@ int main(int argc, char** argv) {
         nodeScores.push_back(sum);
     }
 
-    // 5) Use OutputConverter to get edge-level and graph-level outputs
-    auto  edgeScores = OutputConverter::toEdgeScores(nodeScores, g);
-    auto   edgeTruth = OutputConverter::toEdgeBinary(nodeScores, g, 0.5f);
+    // 5) Define CUSTOM edge‐combiner and graph‐aggregator
+    // Example edge combiner: squared difference of endpoint scores
+    OutputConverter::EdgeCombiner customEdgeCombiner = 
+        [](float a, float b) {
+            float diff = a - b;
+            return diff * diff;
+        };
 
-    float graphScore = OutputConverter::toGraphScore(nodeScores);
-    bool  graphTruth = OutputConverter::toGraphBinary(nodeScores, 0.5f);
+    // Example graph aggregator: maximum node score
+    OutputConverter::GraphAggregator customGraphAgg = 
+        [](const OutputConverter::NodeScores& v) {
+            if (v.empty()) return 0.0f;
+            return *max_element(v.begin(), v.end());
+        };
 
-    // 6) Print everything out in simple terms
+    // 6) Use OutputConverter with CUSTOM functions
+    auto edgeScores = OutputConverter::toEdgeScores(
+        nodeScores, 
+        g,   
+        OutputConverter::DefaultAgg::prodCombiner,// use squared‐difference combiner
+        true                   // undirected graph
+    );
+
+    auto edgeTruth = OutputConverter::toEdgeBinary(
+        nodeScores,
+        g,
+        0.5f,                  // threshold  
+        OutputConverter::DefaultAgg::prodCombiner,// same combiner
+        true
+    );
+
+    float graphScore = OutputConverter::toGraphScore(
+        nodeScores, 
+        OutputConverter::DefaultAgg::maxGraph        // use max aggregator
+    );
+
+    bool graphTruth = OutputConverter::toGraphBinary(
+        nodeScores,
+        0.5f,                  // threshold        
+        OutputConverter::DefaultAgg::maxGraph  // same aggregator
+    );
+
+    // 7) Print results
     cout << "=== Graph‐Level ===\n";
     cout << "Score = " << graphScore
+              << " | truth = " << boolalpha << graphTruth
               << "\n\n";
 
     cout << "=== Edge‐Level ===\n";
     for (size_t i = 0; i < edgeScores.size(); ++i) {
         cout << "Edge " << i
                   << " | score = " << edgeScores[i]
+                  << " | truth = " << boolalpha << edgeTruth[i]
                   << "\n";
     }
 
