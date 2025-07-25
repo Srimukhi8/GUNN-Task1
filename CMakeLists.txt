@@ -10,6 +10,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(SOURCE_FILES
     GATL.cpp
     GCNL.cpp
+    GCNTest.cpp
     Graph.cpp
     GraphReader.cpp
     GraphSage.cpp
