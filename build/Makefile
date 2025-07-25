@@ -177,6 +177,30 @@ GCNL.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_app.dir/build.make CMakeFiles/graph_app.dir/GCNL.cpp.s
 .PHONY : GCNL.cpp.s
 
+GCNTest.o: GCNTest.cpp.o
+.PHONY : GCNTest.o
+
+# target to build an object file
+GCNTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_app.dir/build.make CMakeFiles/graph_app.dir/GCNTest.cpp.o
+.PHONY : GCNTest.cpp.o
+
+GCNTest.i: GCNTest.cpp.i
+.PHONY : GCNTest.i
+
+# target to preprocess a source file
+GCNTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_app.dir/build.make CMakeFiles/graph_app.dir/GCNTest.cpp.i
+.PHONY : GCNTest.cpp.i
+
+GCNTest.s: GCNTest.cpp.s
+.PHONY : GCNTest.s
+
+# target to generate assembly for a file
+GCNTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_app.dir/build.make CMakeFiles/graph_app.dir/GCNTest.cpp.s
+.PHONY : GCNTest.cpp.s
+
 Graph.o: Graph.cpp.o
 .PHONY : Graph.o
 
@@ -312,6 +336,9 @@ help:
 	@echo "... GCNL.o"
 	@echo "... GCNL.i"
 	@echo "... GCNL.s"
+	@echo "... GCNTest.o"
+	@echo "... GCNTest.i"
+	@echo "... GCNTest.s"
 	@echo "... Graph.o"
 	@echo "... Graph.i"
 	@echo "... Graph.s"

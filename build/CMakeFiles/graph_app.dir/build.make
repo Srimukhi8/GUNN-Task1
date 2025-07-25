@@ -97,10 +97,24 @@ CMakeFiles/graph_app.dir/GCNL.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/graph_app.dir/GCNL.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/GCNL.cpp -o CMakeFiles/graph_app.dir/GCNL.cpp.s
 
+CMakeFiles/graph_app.dir/GCNTest.cpp.o: CMakeFiles/graph_app.dir/flags.make
+CMakeFiles/graph_app.dir/GCNTest.cpp.o: /mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/GCNTest.cpp
+CMakeFiles/graph_app.dir/GCNTest.cpp.o: CMakeFiles/graph_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/graph_app.dir/GCNTest.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_app.dir/GCNTest.cpp.o -MF CMakeFiles/graph_app.dir/GCNTest.cpp.o.d -o CMakeFiles/graph_app.dir/GCNTest.cpp.o -c /mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/GCNTest.cpp
+
+CMakeFiles/graph_app.dir/GCNTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/graph_app.dir/GCNTest.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/GCNTest.cpp > CMakeFiles/graph_app.dir/GCNTest.cpp.i
+
+CMakeFiles/graph_app.dir/GCNTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/graph_app.dir/GCNTest.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/GCNTest.cpp -o CMakeFiles/graph_app.dir/GCNTest.cpp.s
+
 CMakeFiles/graph_app.dir/Graph.cpp.o: CMakeFiles/graph_app.dir/flags.make
 CMakeFiles/graph_app.dir/Graph.cpp.o: /mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/Graph.cpp
 CMakeFiles/graph_app.dir/Graph.cpp.o: CMakeFiles/graph_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/graph_app.dir/Graph.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/graph_app.dir/Graph.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_app.dir/Graph.cpp.o -MF CMakeFiles/graph_app.dir/Graph.cpp.o.d -o CMakeFiles/graph_app.dir/Graph.cpp.o -c /mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/Graph.cpp
 
 CMakeFiles/graph_app.dir/Graph.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/graph_app.dir/Graph.cpp.s: cmake_force
 CMakeFiles/graph_app.dir/GraphReader.cpp.o: CMakeFiles/graph_app.dir/flags.make
 CMakeFiles/graph_app.dir/GraphReader.cpp.o: /mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/GraphReader.cpp
 CMakeFiles/graph_app.dir/GraphReader.cpp.o: CMakeFiles/graph_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/graph_app.dir/GraphReader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/graph_app.dir/GraphReader.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_app.dir/GraphReader.cpp.o -MF CMakeFiles/graph_app.dir/GraphReader.cpp.o.d -o CMakeFiles/graph_app.dir/GraphReader.cpp.o -c /mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/GraphReader.cpp
 
 CMakeFiles/graph_app.dir/GraphReader.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/graph_app.dir/GraphReader.cpp.s: cmake_force
 CMakeFiles/graph_app.dir/GraphSage.cpp.o: CMakeFiles/graph_app.dir/flags.make
 CMakeFiles/graph_app.dir/GraphSage.cpp.o: /mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/GraphSage.cpp
 CMakeFiles/graph_app.dir/GraphSage.cpp.o: CMakeFiles/graph_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/graph_app.dir/GraphSage.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/graph_app.dir/GraphSage.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_app.dir/GraphSage.cpp.o -MF CMakeFiles/graph_app.dir/GraphSage.cpp.o.d -o CMakeFiles/graph_app.dir/GraphSage.cpp.o -c /mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/GraphSage.cpp
 
 CMakeFiles/graph_app.dir/GraphSage.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/graph_app.dir/GraphSage.cpp.s: cmake_force
 CMakeFiles/graph_app.dir/output.cpp.o: CMakeFiles/graph_app.dir/flags.make
 CMakeFiles/graph_app.dir/output.cpp.o: /mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/output.cpp
 CMakeFiles/graph_app.dir/output.cpp.o: CMakeFiles/graph_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/graph_app.dir/output.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/graph_app.dir/output.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_app.dir/output.cpp.o -MF CMakeFiles/graph_app.dir/output.cpp.o.d -o CMakeFiles/graph_app.dir/output.cpp.o -c /mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/output.cpp
 
 CMakeFiles/graph_app.dir/output.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/graph_app.dir/output.cpp.s: cmake_force
 CMakeFiles/graph_app.dir/output_main.cpp.o: CMakeFiles/graph_app.dir/flags.make
 CMakeFiles/graph_app.dir/output_main.cpp.o: /mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/output_main.cpp
 CMakeFiles/graph_app.dir/output_main.cpp.o: CMakeFiles/graph_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/graph_app.dir/output_main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/graph_app.dir/output_main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_app.dir/output_main.cpp.o -MF CMakeFiles/graph_app.dir/output_main.cpp.o.d -o CMakeFiles/graph_app.dir/output_main.cpp.o -c /mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/output_main.cpp
 
 CMakeFiles/graph_app.dir/output_main.cpp.i: cmake_force
@@ -171,6 +185,7 @@ CMakeFiles/graph_app.dir/output_main.cpp.s: cmake_force
 graph_app_OBJECTS = \
 "CMakeFiles/graph_app.dir/GATL.cpp.o" \
 "CMakeFiles/graph_app.dir/GCNL.cpp.o" \
+"CMakeFiles/graph_app.dir/GCNTest.cpp.o" \
 "CMakeFiles/graph_app.dir/Graph.cpp.o" \
 "CMakeFiles/graph_app.dir/GraphReader.cpp.o" \
 "CMakeFiles/graph_app.dir/GraphSage.cpp.o" \
@@ -182,6 +197,7 @@ graph_app_EXTERNAL_OBJECTS =
 
 graph_app: CMakeFiles/graph_app.dir/GATL.cpp.o
 graph_app: CMakeFiles/graph_app.dir/GCNL.cpp.o
+graph_app: CMakeFiles/graph_app.dir/GCNTest.cpp.o
 graph_app: CMakeFiles/graph_app.dir/Graph.cpp.o
 graph_app: CMakeFiles/graph_app.dir/GraphReader.cpp.o
 graph_app: CMakeFiles/graph_app.dir/GraphSage.cpp.o
@@ -189,7 +205,7 @@ graph_app: CMakeFiles/graph_app.dir/output.cpp.o
 graph_app: CMakeFiles/graph_app.dir/output_main.cpp.o
 graph_app: CMakeFiles/graph_app.dir/build.make
 graph_app: CMakeFiles/graph_app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable graph_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable graph_app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/graph_app.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Copying graph_data.txt to build directory"
 	/usr/bin/cmake -E copy_if_different /mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/graph_data.txt /mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/build/graph_data.txt

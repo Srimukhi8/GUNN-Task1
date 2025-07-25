@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/graph_app.dir/GATL.cpp.o.d"
   "CMakeFiles/graph_app.dir/GCNL.cpp.o"
   "CMakeFiles/graph_app.dir/GCNL.cpp.o.d"
+  "CMakeFiles/graph_app.dir/GCNTest.cpp.o"
+  "CMakeFiles/graph_app.dir/GCNTest.cpp.o.d"
   "CMakeFiles/graph_app.dir/Graph.cpp.o"
   "CMakeFiles/graph_app.dir/Graph.cpp.o.d"
   "CMakeFiles/graph_app.dir/GraphReader.cpp.o"

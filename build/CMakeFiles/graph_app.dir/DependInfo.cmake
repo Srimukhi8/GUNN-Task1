@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/GATL.cpp" "CMakeFiles/graph_app.dir/GATL.cpp.o" "gcc" "CMakeFiles/graph_app.dir/GATL.cpp.o.d"
   "/mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/GCNL.cpp" "CMakeFiles/graph_app.dir/GCNL.cpp.o" "gcc" "CMakeFiles/graph_app.dir/GCNL.cpp.o.d"
+  "/mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/GCNTest.cpp" "CMakeFiles/graph_app.dir/GCNTest.cpp.o" "gcc" "CMakeFiles/graph_app.dir/GCNTest.cpp.o.d"
   "/mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/Graph.cpp" "CMakeFiles/graph_app.dir/Graph.cpp.o" "gcc" "CMakeFiles/graph_app.dir/Graph.cpp.o.d"
   "/mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/GraphReader.cpp" "CMakeFiles/graph_app.dir/GraphReader.cpp.o" "gcc" "CMakeFiles/graph_app.dir/GraphReader.cpp.o.d"
   "/mnt/c/Users/Srimukhi/OneDrive/Documents/IITMadras/CPClub/GUNNProject/Task1/GraphSage.cpp" "CMakeFiles/graph_app.dir/GraphSage.cpp.o" "gcc" "CMakeFiles/graph_app.dir/GraphSage.cpp.o.d"
