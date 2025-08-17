@@ -2,7 +2,7 @@
 
 #include "Graph.h"              // your Graph class
 #include "GraphReader.h"        // read_graph_from_file(...)
-#include "GCNTest.h"               // your existing GCNLayer
+#include "GCNL.h"               // your existing GCNLayer
 #include "output.h"             // OutputConverter API
 #include <iostream>
 #include <vector>
@@ -25,7 +25,7 @@ int main(int argc, char** argv) {
     int out_dim;
     cin >> out_dim;
 
-    GCNTestLayer gcn(g.num_node_features, out_dim);
+    GCNLayer gcn(g.num_node_features, out_dim);
     auto features = gcn.forward(g.node_features, g.adjacency_list);
 
     cout << "=== Node Features (post-GCN) ===\n";
